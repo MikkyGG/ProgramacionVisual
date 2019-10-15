@@ -24,7 +24,13 @@ def descuento(desc, importe):
 
 	}
 
-	print("El importe del producto es: $" + str(dicc["Importe"]) + " Y su descuento es de: " + str(dicc["Descuento"]) + "%")
+	descuentos = importe * desc / 100 
+
+	resultado = importe - descuentos
+
+	print("El importe del producto es: $" + str(dicc["Importe"]) + " y su descuento es de: " + str(dicc["Descuento"]) + "%")
+
+	print("El costo del producto despues del descuento es de: $", resultado)
 
 descuento(15, 1500)
 
