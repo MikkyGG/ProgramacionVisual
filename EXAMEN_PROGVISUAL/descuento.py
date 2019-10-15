@@ -13,7 +13,9 @@ ID: 00294955
 
 """
 
+desc = int(input("Ingresa el porcentaje de descuento: "))
 
+importe = float(input("Ingresa el importe del producto: "))
 
 def descuento(desc, importe):
 
@@ -32,6 +34,6 @@ def descuento(desc, importe):
 
 	print("El costo del producto despues del descuento es de: $", resultado)
 
-descuento(15, 1500)
+descuento(desc, importe)
 
 
